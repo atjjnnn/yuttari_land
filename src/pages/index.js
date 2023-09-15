@@ -1,5 +1,5 @@
 import Link from "next/link";
-import home from "src/styles/home.module.css";
+import home from "../styles/home.module.css";
 import Slider from "@/components/slider";
 export default function Home() {
   return (
