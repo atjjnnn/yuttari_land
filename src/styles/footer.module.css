@@ -1,0 +1,13 @@
+.wrapper {
+  padding: var(--space-xl) 0;
+  background-color: #e0f9f3;
+}
+
+.flexContainer {
+  composes: sideBySideCenter from "src/styles/utils.module.css";
+  gap: 2em;
+}
+
+.info {
+  text-align: center;
+}
