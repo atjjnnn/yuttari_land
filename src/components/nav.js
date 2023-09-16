@@ -73,11 +73,12 @@ export default function Nav() {
           </AccordionExam>
         </li>
         <li>
-          <div className={styles.inquiry}>
-            <Link href="https://tayori.com/form/bcf32d9cb0dc751781fc83b469ddc59208a92546/">
-              お問い合わせ
-            </Link>
-          </div>
+          <Link
+            href="https://tayori.com/form/bcf32d9cb0dc751781fc83b469ddc59208a92546/"
+            className={styles.inquiry}
+          >
+            お問い合わせ
+          </Link>
         </li>
       </ul>
     </nav>

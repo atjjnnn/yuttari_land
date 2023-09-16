@@ -1,14 +1,17 @@
 import Link from "next/link";
 import Slider from "@/components/slider";
 import Image from "next/legacy/image";
-import home from "../styles/Home.module.css";
+import home from "../styles/home.module.css";
 import ColorIcon from "images/ColorIcon.jpg";
 import Container from "@/components/container";
+import Meta from "@/components/meta";
+import currentClass from "images/currentClass.jpg";
 export default function Home() {
   return (
     <>
       <Container>
-        <h1>
+        <Meta pageTitle="ゆったりランド" />
+        <h1 className={home.maintitle}>
           色彩知育教室
           <br />
           高槻カレントクラス
@@ -17,37 +20,39 @@ export default function Home() {
 
         <Slider />
 
-        <div>
-          <p>
-            ”色彩知育 カレントクラス”では、最新の脳科学をベースにした
+        <div className={home.ttl_center}>
+          <div className={home.areaCurrent}>
+            <figure className={home.image}>
+              <Image src={currentClass} alt="" />
+            </figure>
             <br />
-            日本こども色彩協会オリジナルメソッドである新しい教育『色彩知育法』を取り入れ、
-            <br />
-            こどもが自分で答えを出し、自らの人生をつくっていけるような環境を提供します。
-            <br />
-            また、親が”日常で出来ること”を学べる機会を作り、親も子も共に学べる環境づくりを目指しています。
-            <br />
-          </p>
-          <Link href="https://kodomo-shikisai.com/">
-            日本こども色彩協会とは
-          </Link>
+            <div>
+              <p>
+                ”色彩知育 カレントクラス”では、最新の脳科学をベースにした
+                <br />
+                日本こども色彩協会オリジナルメソッドである新しい教育『色彩知育法』を取り入れ、
+                <br />
+                こどもが自分で答えを出し、自らの人生をつくっていけるような環境を提供します。
+                <br />
+                また、親が”日常で出来ること”を学べる機会を作り、親も子も共に学べる環境づくりを目指しています。
+                <br />
+              </p>
+              <Link href="https://kodomo-shikisai.com/" className={home.button}>
+                日本こども色彩協会とは
+              </Link>
+            </div>
+          </div>
         </div>
+
+        <hr />
+
         <div className={home.areaMethod}>
           <div className={home.ttl_center}>
             <h2>ゆったりランドってなあに？</h2>
           </div>
           <div className={home.whattodo}>
             <figure>
-              <Image
-                src={ColorIcon}
-                alt=""
-                layout="responsive"
-                sizes="(min-width: 800px), 100vw"
-                width={1200}
-                height={800}
-                placeholder="blur"
-                style={{ transition: "1.5s" }}
-              />
+              <Image src={ColorIcon} alt="" layout="responsive" />
             </figure>
             <div className={home.areaFeature}>
               <br />
@@ -60,6 +65,18 @@ export default function Home() {
               <br />
             </div>
           </div>
+        </div>
+
+        <hr />
+
+        <div className={home.floor}>
+          <div>
+            <h2>フロアマップ</h2>
+            <br />
+            <small>floor map</small>
+          </div>
+
+          <hr />
         </div>
       </Container>
     </>
