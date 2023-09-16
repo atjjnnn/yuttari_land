@@ -1,6 +1,6 @@
 .wrapper {
   padding: var(--space-xl) 0;
-  background-color: #e0f9f3;
+  background-image: linear-gradient(#cee9f1, #68d8f1); /*線型グラデーション */
 }
 
 .flexContainer {

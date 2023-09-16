@@ -1,3 +1,21 @@
 .maintitle {
   text-align: center;
 }
+
+.areaMethod {
+  margin: 10px;
+}
+
+.ttl_center {
+  text-align: center;
+  margin: 50px;
+}
+
+.whattodo {
+  display: flex;
+  flex-direction: column;
+}
+
+.areaFeature {
+  text-align: center;
+}

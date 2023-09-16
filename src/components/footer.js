@@ -8,7 +8,6 @@ export default function Footer() {
     <footer className={styles.wrapper}>
       <div className={styles.flexContainer}>
         <Logo />
-        <Social />
       </div>
       <div className={styles.info}>
         <br />
