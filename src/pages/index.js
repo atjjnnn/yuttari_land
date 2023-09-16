@@ -4,7 +4,7 @@ import Slider from "@/components/slider";
 export default function Home() {
   return (
     <>
-      <h1 className={home.maintitle}>
+      <h1>
         色彩知育教室
         <br />
         高槻カレントクラス
