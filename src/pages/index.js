@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Slider from "@/components/slider";
 import Image from "next/legacy/image";
-import home from "../styles/home.module.css";
+import home from "../styles/Home.module.css";
 import ColorIcon from "images/ColorIcon.jpg";
 import Container from "@/components/container";
 import Meta from "@/components/meta";
@@ -52,7 +52,16 @@ export default function Home() {
           </div>
           <div className={home.whattodo}>
             <figure>
-              <Image src={ColorIcon} alt="" layout="responsive" />
+              <Image
+                src={ColorIcon}
+                alt=""
+                layout="responsive"
+                sizes="(min-width: 800px), 100vw"
+                width={1200}
+                height={800}
+                placeholder="blur"
+                style={{ transition: "1.5s" }}
+              />
             </figure>
             <div className={home.areaFeature}>
               <br />
