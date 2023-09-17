@@ -45,7 +45,7 @@ $cBlack: black;
 }
 
 /* デスクトップ */
-@media (min-width: 768px) {
+@media (min-width: 1350px) {
   .btn {
     display: none;
     justify-content: flex-end;
@@ -64,7 +64,7 @@ $cBlack: black;
 }
 
 /* モバイル */
-@media (max-width: 767px) {
+@media (max-width: 1349px) {
   /* ボタン */
   .btn {
     all: unset;
