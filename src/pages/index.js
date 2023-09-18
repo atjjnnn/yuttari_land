@@ -114,6 +114,14 @@ export default function Home() {
           <br />
           <hr />
         </div>
+
+        <div className={home.accessMap}>
+          <Link href="https://www.google.com/maps?ll=34.839247,135.609817&z=15&t=m&hl=ja&gl=JP&mapclient=embed&cid=291306575015615215">
+            ゆったりランドの場所はこちら
+          </Link>
+
+          <hr />
+        </div>
       </Container>
     </>
   );

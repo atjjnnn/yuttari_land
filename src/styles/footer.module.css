@@ -1,7 +1,7 @@
 .wrapper {
   padding: var(--space-xl) 0;
-  background-image: linear-gradient(#cee9f1, #68d8f1); /*線型グラデーション */
-  padding: 10px; /* ヘッダーの余白を指定する(上下左右) */
+  background-image: linear-gradient(#f1ceed, #fbcff7); /*線型グラデーション */
+  padding: 40px; /* ヘッダーの余白を指定する(上下左右) */
 }
 
 .flexContainer {

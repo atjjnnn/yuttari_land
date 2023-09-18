@@ -3,7 +3,7 @@
 }
 
 .fixedHeader {
-  background-image: linear-gradient(#e45dcc, #e981e9); /*線型グラデーション */
+  background-image: linear-gradient(#f8eef6, #fecffe); /*線型グラデーション */
   position: fixed; /* ヘッダーを固定する */
   top: 0; /* 上部から配置の基準位置を決める */
   left: 0; /* 左から配置の基準位置を決める */
@@ -20,7 +20,7 @@
   width: auto; /* ヘッダーの横幅を指定する */
   height: 40px; /* ヘッダーの高さを指定する */
   padding: 50px; /* ヘッダーの余白を指定する(上下左右) */
-  background-image: linear-gradient(#e45dcc, #e981e9); /*線型グラデーション */
+  background-image: linear-gradient(#f9e7f5, #e981e9); /*線型グラデーション */
   color: #000000; /* フォントの色を指定する */
   z-index: 999;
 }

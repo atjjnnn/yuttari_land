@@ -11,7 +11,7 @@
   composes: basic;
   display: inline-block;
   padding: 10px;
-  background-image: linear-gradient(#d5f0b3, #cae9ba); /*線型グラデーション */
+  background-image: linear-gradient(#f0b3ca, #f5b0d3); /*線型グラデーション */
   border-radius: 20px;
   color: var(--white);
   font-size: var(--small-heading2);
