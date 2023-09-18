@@ -11,6 +11,7 @@
   white-space: nowrap; /* テキストを折り返さずに1行で表示する */
   position: fixed;
   border-radius: 20px;
+  z-index: 999;
 }
 
 .accordionContent a {
