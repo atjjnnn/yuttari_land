@@ -1,0 +1,29 @@
+.backFrame {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px;
+}
+
+.aboutRental {
+  margin: 100px;
+}
+
+.aboutCost {
+  margin: 100px;
+}
+
+.tableBordered {
+  border: 1px solid #dddddd;
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
