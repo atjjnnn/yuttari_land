@@ -5,7 +5,7 @@ export default function Facilitator() {
     <>
       <Container large>
         <Meta pageTitle="ファシリテーター養成講座" />
-        ファシリテータ養成講座について
+        <h1>ファシリテータ養成講座について</h1>
       </Container>
     </>
   );

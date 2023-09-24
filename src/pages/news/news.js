@@ -4,8 +4,8 @@ export default function RentalSpace() {
   return (
     <>
       <Container large>
-        <Meta pageTitle="レンタルスペースを探している方" />
-        <h1>レンタルスペースを探している方</h1>
+        <Meta pageTitle="ニュース" />
+        <h1>ニュース</h1>
       </Container>
     </>
   );

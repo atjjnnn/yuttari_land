@@ -6,7 +6,7 @@ export default function Baby() {
     <>
       <Container large>
         <Meta pageTitle="ベビー色彩教室" />
-        ベビー色彩教室について
+        <h1>ベビー色彩教室について</h1>
       </Container>
     </>
   );

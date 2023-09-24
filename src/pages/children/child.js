@@ -6,7 +6,7 @@ export default function Child() {
     <>
       <Container large>
         <Meta pageTitle="こども色彩教室" />
-        こども色彩教室について
+        <h1>こども色彩教室について</h1>
       </Container>
     </>
   );
