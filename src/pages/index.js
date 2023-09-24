@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Container>
-        <Meta pageTitle="ゆったりランド" />
+        <Meta pageTitle="ホーム" />
         <h1 className={home.maintitle}>
           色彩知育教室
           <br />
