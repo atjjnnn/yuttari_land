@@ -1,12 +1,11 @@
 import Container from "@/components/container";
 import Meta from "@/components/meta";
-
-export default function Baby() {
+export default function RentalFee() {
   return (
     <>
       <Container large>
-        <Meta pageTitle="ベビー色彩教室" />
-        ベビー色彩教室について
+        <Meta pageTitle="料金案内" />
+        レンタルスペースの料金案内
       </Container>
     </>
   );

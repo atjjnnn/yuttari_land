@@ -34,7 +34,7 @@ export default function Nav() {
             <Link href="/">
               <p onClick={closeNav}>ゆったりランドって</p>
             </Link>
-            <Link href="/blog/schedule">
+            <Link href="/news/schedule">
               <p onClick={closeNav}>ニュース</p>
             </Link>
           </AccordionExam>
@@ -61,13 +61,13 @@ export default function Nav() {
         <li>
           <Image src={kuma} alt="" width="50em" height="30em" />
           <AccordionExam title="レンタルスペース">
-            <Link href="/adults/rental">
+            <Link href="/adults/rental/rental_for_classes">
               <p onClick={closeNav}>講座・教室を開きたい方</p>
             </Link>
-            <Link href="/adults/rental">
+            <Link href="/adults/rental/rental_space">
               <p onClick={closeNav}>レンタルスペースを探している方</p>
             </Link>
-            <Link href="/adults/rental">
+            <Link href="/adults/rental/rental_fee">
               <p onClick={closeNav}>料金案内</p>
             </Link>
           </AccordionExam>
