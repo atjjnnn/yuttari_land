@@ -34,7 +34,7 @@ export default function Nav() {
             <Link href="/">
               <p onClick={closeNav}>ゆったりランドって</p>
             </Link>
-            <Link href="/news/news">
+            <Link href="/news/schedule">
               <p onClick={closeNav}>ニュース</p>
             </Link>
           </AccordionExam>
