@@ -11,16 +11,3 @@
   padding: 10px; /* ヘッダーの余白を指定する(上下左右) */
   z-index: 999;
 }
-
-.tmp {
-  position: fixed; /* ヘッダーを固定する */
-  top: 0; /* 上部から配置の基準位置を決める */
-  left: 0; /* 左から配置の基準位置を決める */
-  right: 0;
-  width: auto; /* ヘッダーの横幅を指定する */
-  height: 40px; /* ヘッダーの高さを指定する */
-  padding: 50px; /* ヘッダーの余白を指定する(上下左右) */
-  background-image: linear-gradient(#f9e7f5, #e981e9); /*線型グラデーション */
-  color: #000000; /* フォントの色を指定する */
-  z-index: 999;
-}

@@ -13,6 +13,9 @@ import PostCategories from "@/components/post-categories";
 import { extranctText } from "lib/extract-text";
 import Meta from "@/components/meta";
 
+// ローカルの代替アイキャッチ画像
+import { eyecatchLocal } from "lib/constants";
+
 export default function Schedule({
   title,
   publish,
@@ -60,18 +63,17 @@ export default function Schedule({
 }
 
 export async function getStaticProps() {
-  const slug = "schedule";
-
+  const slug = "micro";
   const post = await getPostBySlug(slug);
-
   const desctiption = extranctText(post.content);
+  const eyecatch = post.eyecatch ?? eyecatchLocal;
 
   return {
     props: {
       title: post.title,
       publish: post.publishDate,
       content: post.content,
-      eyecatch: post.eyecatch,
+      eyecatch: eyecatch,
       categories: post.categories,
       desctiption: desctiption,
     },

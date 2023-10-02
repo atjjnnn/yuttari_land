@@ -1,0 +1,7 @@
+.hero {
+  margin-top: 60px;
+  height: 650px;
+  background-image: url(../../images/currentClass.jpg);
+  background-size: cover;
+  background-position: center;
+}
