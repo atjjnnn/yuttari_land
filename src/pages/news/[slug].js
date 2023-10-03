@@ -77,29 +77,35 @@ export async function getStaticPaths() {
   const allSlugs = await getAllSlugs();
   return {
     paths: allSlugs.map(({ slug }) => `/news/${slug}`),
-    fallback: false,
+    fallback: "blocking",
   };
 }
 
 export async function getStaticProps(context) {
   const slug = context.params.slug;
   const post = await getPostBySlug(slug);
-  const desctiption = extranctText(post.content);
-  const eyecatch = post.eyecatch ?? eyecatchLocal;
 
-  const allSlugs = await getAllSlugs();
-  const [prevPost, nextPost] = prevNextPost(allSlugs, slug);
+  //slugが存在するかチェック
+  if (!post) {
+    return { notFound: true };
+  } else {
+    const desctiption = extranctText(post.content);
+    const eyecatch = post.eyecatch ?? eyecatchLocal;
 
-  return {
-    props: {
-      title: post.title,
-      publish: post.publishDate,
-      content: post.content,
-      eyecatch: eyecatch,
-      categories: post.categories,
-      desctiption: desctiption,
-      prevPost: prevPost,
-      nextPost: nextPost,
-    },
-  };
+    const allSlugs = await getAllSlugs();
+    const [prevPost, nextPost] = prevNextPost(allSlugs, slug);
+
+    return {
+      props: {
+        title: post.title,
+        publish: post.publishDate,
+        content: post.content,
+        eyecatch: eyecatch,
+        categories: post.categories,
+        desctiption: desctiption,
+        prevPost: prevPost,
+        nextPost: nextPost,
+      },
+    };
+  }
 }
