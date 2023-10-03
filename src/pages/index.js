@@ -8,9 +8,11 @@ import Meta from "@/components/meta";
 import currentClass from "images/currentClass.jpg";
 import Accordion from "@/components/accordion";
 import AccordionStyles from "../styles/accordion.module.css";
+import Hero from "@/components/hero";
 export default function Home() {
   return (
     <>
+      <Hero />
       <Container>
         <Meta pageTitle="ホーム" />
         <h1 className={home.maintitle}>

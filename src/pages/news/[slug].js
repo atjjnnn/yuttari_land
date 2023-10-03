@@ -16,7 +16,7 @@ import Meta from "@/components/meta";
 // ローカルの代替アイキャッチ画像
 import { eyecatchLocal } from "lib/constants";
 
-export default function Schedule({
+export default function Post({
   title,
   publish,
   content,
@@ -62,8 +62,15 @@ export default function Schedule({
   );
 }
 
-export async function getStaticProps() {
-  const slug = "micro";
+export async function getStaticPaths() {
+  return {
+    paths: ["/news/schedule", "/news/music", "/news/micro"],
+    fallback: false,
+  };
+}
+
+export async function getStaticProps(context) {
+  const slug = context.params.slug;
   const post = await getPostBySlug(slug);
   const desctiption = extranctText(post.content);
   const eyecatch = post.eyecatch ?? eyecatchLocal;
