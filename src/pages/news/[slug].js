@@ -1,4 +1,4 @@
-import { getPostBySlug } from "lib/api";
+import { getPostBySlug, getAllSlugs } from "lib/api";
 import Container from "@/components/container";
 import PostHeader from "@/components/post-header";
 import PostBody from "@/components/post-body";
@@ -63,8 +63,9 @@ export default function Post({
 }
 
 export async function getStaticPaths() {
+  const allSlugs = await getAllSlugs();
   return {
-    paths: ["/news/schedule", "/news/music", "/news/micro"],
+    paths: allSlugs.map(({ slug }) => `/news/${slug}`),
     fallback: false,
   };
 }
