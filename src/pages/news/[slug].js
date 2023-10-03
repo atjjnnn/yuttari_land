@@ -13,6 +13,7 @@ import PostCategories from "@/components/post-categories";
 import { extranctText } from "lib/extract-text";
 import Meta from "@/components/meta";
 import { prevNextPost } from "lib/prev-next-post";
+import Pagination from "@/components/pagination";
 
 // ローカルの代替アイキャッチ画像
 import { eyecatchLocal } from "lib/constants";
@@ -61,12 +62,12 @@ export default function Post({
           </TwoColumnSidebar>
         </TwoColumn>
 
-        <div>
-          {prevPost.title} {prevPost.sug}
-        </div>
-        <div>
-          {nextPost.title} {nextPost.slug}
-        </div>
+        <Pagination
+          prevText={prevPost.title}
+          prevUrl={`/news/${prevPost.title}`}
+          nextText={nextPost.title}
+          nextUrl={`/news/${nextPost.slug}`}
+        />
       </article>
     </Container>
   );
