@@ -12,6 +12,7 @@ import ConvertBody from "@/components/convert-body";
 import PostCategories from "@/components/post-categories";
 import { extranctText } from "lib/extract-text";
 import Meta from "@/components/meta";
+import { prevNextPost } from "lib/prev-next-post";
 
 // ローカルの代替アイキャッチ画像
 import { eyecatchLocal } from "lib/constants";
@@ -23,6 +24,8 @@ export default function Post({
   eyecatch,
   categories,
   desctiption,
+  prevPost,
+  nextPost,
 }) {
   return (
     <Container>
@@ -57,6 +60,13 @@ export default function Post({
             <PostCategories categories={categories} />
           </TwoColumnSidebar>
         </TwoColumn>
+
+        <div>
+          {prevPost.title} {prevPost.sug}
+        </div>
+        <div>
+          {nextPost.title} {nextPost.slug}
+        </div>
       </article>
     </Container>
   );
@@ -76,6 +86,9 @@ export async function getStaticProps(context) {
   const desctiption = extranctText(post.content);
   const eyecatch = post.eyecatch ?? eyecatchLocal;
 
+  const allSlugs = await getAllSlugs();
+  const [prevPost, nextPost] = prevNextPost(allSlugs, slug);
+
   return {
     props: {
       title: post.title,
@@ -84,6 +97,8 @@ export async function getStaticProps(context) {
       eyecatch: eyecatch,
       categories: post.categories,
       desctiption: desctiption,
+      prevPost: prevPost,
+      nextPost: nextPost,
     },
   };
 }
