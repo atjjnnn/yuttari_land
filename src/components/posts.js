@@ -12,9 +12,9 @@ export default function Posts({ posts }) {
               <Image
                 src={eyecatch.url}
                 alt=""
-                layout="responsive"
-                width={eyecatch.width}
-                height={eyecatch.height}
+                layout="fill"
+                objectFit="cover"
+                sizes="(min-width: 1152px) 576px, 50vw"
               />
             </figure>
             <h2>{title}</h2>

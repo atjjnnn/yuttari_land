@@ -8,7 +8,7 @@ export default function Document() {
     <Html lang={siteLang}>
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
           rel="stylesheet"
         />
       </Head>
