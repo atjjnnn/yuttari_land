@@ -4,6 +4,8 @@ import Container from "src/components/container";
 import Posts from "@/components/posts";
 import Styles from "src/styles/posts.module.css";
 
+import { eyecatchLocal } from "lib/constants";
+
 export default function Blog({ posts }) {
   return (
     <Container>
@@ -18,6 +20,12 @@ export default function Blog({ posts }) {
 }
 export async function getStaticProps() {
   const posts = await getAllPosts();
+
+  for (const post of posts) {
+    if (!post.hasOwnProperty("eyecatch")) {
+      post.eyecatch = eyecatchLocal;
+    }
+  }
 
   return {
     props: {
