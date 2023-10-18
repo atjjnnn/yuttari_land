@@ -1,10 +1,11 @@
 .hero {
-  height: 650px;
+  height: 400px;
   background-image: url(../../images/currentClass.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .title {
-  margin: 150px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
