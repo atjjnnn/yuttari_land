@@ -5,7 +5,7 @@
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-jump);
+  gap: 1.5em;
   margin-top: var(--space-xs);
   margin-bottom: var(--space-lg);
 }
