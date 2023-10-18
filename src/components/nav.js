@@ -51,6 +51,9 @@ export default function Nav() {
             <Link href="/children/teacher">
               <p onClick={closeNav}>講師紹介</p>
             </Link>
+            <Link href="/children/fee">
+              <p onClick={closeNav}>料金案内</p>
+            </Link>
           </AccordionExam>
         </li>
         <li>
@@ -58,6 +61,9 @@ export default function Nav() {
           <AccordionExam title="資格を取りたい方">
             <Link href="/adults/facilitator">
               <p onClick={closeNav}>ファシリテーター養成講座</p>
+            </Link>
+            <Link href="/adults/fee">
+              <p onClick={closeNav}>料金案内</p>
             </Link>
           </AccordionExam>
         </li>
@@ -72,6 +78,9 @@ export default function Nav() {
             </Link>
             <Link href="/adults/rental/rental_fee">
               <p onClick={closeNav}>料金案内</p>
+            </Link>
+            <Link href="/adults/rental/terms">
+              <p onClick={closeNav}>利用規約</p>
             </Link>
           </AccordionExam>
         </li>
