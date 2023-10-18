@@ -6,11 +6,6 @@
   margin: 10px;
 }
 
-.ttl_center {
-  text-align: center;
-  margin: 50px;
-}
-
 .whattodo {
   display: flex;
   flex-direction: column;
@@ -23,11 +18,11 @@
 .button {
   display: flex;
   justify-content: space-between;
+  text-align: right;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   width: 260px;
   color: #333;
-  font-size: 18px;
   font-weight: 700;
   text-decoration: none;
   background-image: linear-gradient(#f1f9f9, #d5edf9); /*線型グラデーション */
@@ -43,6 +38,11 @@
   transform: rotate(45deg);
 }
 
+.buttonDiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .areaCurrent {
   composes: sideBySideCenter from "src/styles/utils.module.css";
   gap: 10px;
@@ -51,7 +51,7 @@
 
 .ttl_center {
   text-align: center;
-  margin: 50px;
+  margin: 20px;
 }
 
 .floor {
